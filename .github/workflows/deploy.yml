@@ -1,8 +1,5 @@
 name: Deploy to GitHub Pages
 
-env:
-  BASE_PATH: "" # Change if you url needs a basepath
-
 on:
   push:
     branches:
