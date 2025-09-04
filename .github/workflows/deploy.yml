@@ -1,5 +1,8 @@
 name: Deploy to GitHub Pages
 
+env:
+  BASE_PATH: "" # Change if you url needs a basepath
+
 on:
   push:
     branches:
@@ -31,7 +34,7 @@ jobs:
       - name: Upload build output
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist # Change if your build folder is different
+          path: ./dist # Change if your build folder is different
 
   deploy:
     environment:
